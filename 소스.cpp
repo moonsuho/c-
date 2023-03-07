@@ -10,7 +10,7 @@ int main()
 	string name;
 	string mbti;
 	int count = 0;
-	cout << "ÀÌ¸§À» 43°³ ÀÔ·ÂÇÏ¶ó" << endl;          // ÀÌ¸§ 43°³ ÀúÀå
+	cout << "ì´ë¦„ì„ 43ê°œ ì…ë ¥í•˜ë¼" << endl;          // ì´ë¦„ 43ê°œ ì €ì¥
 	for (int i = 0; i < 43; i++)
 	{
 		cout << i + 1 << ">>";
@@ -18,7 +18,7 @@ int main()
 		nm.push_back(name);
 	}
 
-	cout << "°¢°¢ÀÇ mbti 43°³ ÀÔ·ÂÇÏ¶ó" << endl;
+	cout << "ê°ê°ì˜ mbti 43ê°œ ì…ë ¥í•˜ë¼" << endl;
 	for (int i = 0; i < 43; i++)
 	{
 		cout << i + 1 << ">>";
@@ -26,13 +26,12 @@ int main()
 		sv.push_back(mbti);
 	}
 
-	cout << "³ª¿Í MBTI°¡ µ¿ÀÏÇÑ Ä£±¸µé: " ;
+	cout << "ë‚˜ì™€ MBTIê°€ ë™ì¼í•œ ì¹œêµ¬ë“¤: " ;
 
-	mbti = sv.at(0);          // º¤ÅÍÀÇ Ã¹¹øÂ° ÀÌ¸§ name¿¡ ÀúÀå
+	mbti = sv.at(0);          // ë²¡í„°ì˜ ì²«ë²ˆì§¸ ì´ë¦„ nameì— ì €ì¥
 	for (int i = 0; i < sv.size(); i++)          
 	{
 		if (mbti == sv[i])
 			cout << nm[i] << " ";
 	}
 }
-	
